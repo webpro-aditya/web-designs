@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Varela Round', sans-serif;
+        }
+        input{
+            border: 2px solid #ccc;
+            padding: 0 2%;
+        }
+        textarea{
+            border: 2px solid #ccc;
+        }
+        input::placeholder, textarea::placeholder{
+            color: #ccc;
+        }
+        input:focus, textarea:focus{
+            outline: none;
+        }
+        #wrapper {
+            width: 100%;
+            height: 700px;
+            background-color: #4158D0;
+            background-repeat: no-repeat;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            padding-top: 5%;
+        }
+        #fbox{
+            width: 40%;
+            height: 90%;
+            background: #fff;
+            margin: auto;
+            padding: 5% 2%; 
+            box-shadow: 1px 1px 10px #000;
+        }
+        #fbox h1{
+            text-align: center;
+            margin-bottom: 3%;
+        }
+        label{
+            display: inline-block;
+            width: 100%;
+            margin: 2% 0;
+        }
+        input[type=text]{
+            width: 47.5%;
+            height: 38px;
+            float: left;
+        }
+        input[type=text]:nth-of-type(2){
+            margin-left: 5%;
+        }
+        input[type=email], input[type=tel]{
+            width: 100%;
+            height: 38px;
+        }
+        textarea{
+            width: 100%;
+            height: 90px;
+            resize: none;
+        }
+        input[type=submit]{
+            background: #343434;
+            border: none;
+            border-radius: 100px;
+            color: #fff;
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+            margin: 20px 35%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+        <div id="fbox">
+            <h1>Contact Us</h1>
+            <form>
+                 <label for="">Your Name*</label>
+                 <input type="text" name="" id="" placeholder="First Name">
+                 <input type="text" name="" id="" placeholder="Last Name">
+
+
+                 <label for="">Email</label>
+                 <input type="email" name="" id="" placeholder="Enter Email">
+
+                 <label for="">Phone Number</label>
+                 <input type="tel" name="" id="" placeholder="Enter Phone Number">
+
+                 <label for="">Message</label>
+                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                 <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
